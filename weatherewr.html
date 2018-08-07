@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>                  
+        <meta charset="UTF-8">
+  <meta name="description" content="A Project to show weather in 5 cities of the east coast">
+  <meta name="keywords" content="Weather,East Coast,NYC,Frontend,Web,Development">
+  <meta name="author" content="Anuradha Naik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+<link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+<script src="js/main.js"></script>
+<script type="text/javascript">
+	
+       window.onload = function () {
+             
+
+         getTemp("EWR","#t1"); getTempD("EWR","#d1");
+}
+
+</script>
+    </head>
+
+   <body style="text-align: -webkit-center;">
+   <h1>Check out the weather in</h1>
+   		   <img src="img/paint.png" style="width: 10%;float:right;margin-right: 140px">
+   		 
+    <div style="background-repeat: no-repeat;background-size: 60% 60%;max-width: 700px;min-height: 500px;">
+
+<div id="fc">
+	<div onclick="toTemp('F','EWR')">°F</div>
+  <div onclick="toTemp('C','EWR')" class="selected">°C</div>
+</div>
+		<ul id="fivecities" >
+			<li><a>Newark,NJ</a><span class="temp" id="t1"></span></li>
+          <li><span id="d1"></span></li>
+<img src="img/ewr2.png" style="width: 45%;margin-top: 40px">
+		</ul>
+
+
+		</div>
+		<img src="img/chair.png" style="width: 25%;float:left;margin-left: 40px;margin-top: -220px">
+		<img src="img/gif.gif" style="width:55%;float:right;margin-right: -240px;margin-top: -240px">
+    
+</body>
+</html>

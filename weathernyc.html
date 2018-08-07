@@ -1,84 +1,50 @@
-
 <!DOCTYPE html>
 <html>
-    <head>   
-                     
+    <head>                  
         <meta charset="UTF-8">
   <meta name="description" content="A Project to show weather in 5 cities of the east coast">
   <meta name="keywords" content="Weather,East Coast,NYC,Frontend,Web,Development">
   <meta name="author" content="Anuradha Naik">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<style type="text/css">
-    *{
-      padding: 6px;
-    
-             font-family: 'Roboto', sans-serif;
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 
-    }
 
-</style>
-                   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
-<script src="main.js"></script>
-      <script type="text/javascript">
  
-        window.onload = function () {
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  
+       window.onload = function () {
              
 
-          {
-     
-   
-   var current=(fivecities["NYC"]);
-   var fullform=[current.fullform];
-   var cityid=current.id;
-    document.getElementById('currentcity').innerHTML =fullform;
-    {
-     
-     $.getJSON("https://fcc-weather-api.glitch.me/api/current",
-        {
-          
-          lat:40.7128,
-          lon:-74.0060
-        
-        },
-        function(response){  //'response' is actually a variable, we could name it what ever we want. It just stores what the api sends
-          console.log(response);
-           $(".temp").html(response.main.temp);
-            $(".weather").html(response.weather[0].description);
-        });
-
-    }
-
+         getTemp("NYC","#t1"); getTempD("NYC","#d1");
 }
-}
-      </script>
+
+</script>
     </head>
 
-    <body style="text-align: center;">
-    <span id="currentcity"></span>
-        <div class="weather"></div> <!-- Will show the weather -->
-        <div class="temp"></div>  <!-- Will show the temperature -->
+   <body style="text-align: -webkit-center;">
+   <h1>Check out the weather in</h1>
+         <img src="img/paint.png" style="width: 10%;float:right;margin-right: 140px">
+       
+    <div style="background-repeat: no-repeat;background-size: 60% 60%;max-width: 700px;min-height: 500px;">
 
-        <script>
-          $(".submit").click(function(){
-              var city = $(".city").val()
-              //Make the API Call
-              $.getJSON("https://api.openweathermap.org/data/2.5/weather",
-        {
-          
-          id:4758023,
-          units:"imperial",
-          appid:'f66894fc01700b34ac889809e442c6de'
-        },
-        function(response){  //'response' is actually a variable, we could name it what ever we want. It just stores what the api sends
-          console.log(response)
-          $(".temp").html(response.main.temp);
-            $(".weather").html(response.weather[0].description)
-        });
-          })
-          
-        </script> 
-    </body>
+<div id="fc">
+  <div onclick="toTemp('F','NYC')">°F</div>
+  <div onclick="toTemp('C','NYC')" class="selected">°C</div>
+</div>
+    <ul id="fivecities" >
+      <li><a>New York,NY</a><span class="temp" id="t1"></span></li>
+          <li><span id="d1"></span></li>
+<img src="img/1003.png" style="width: 45%;margin-top: 40px">
+    </ul>
+
+
+    </div>
+    <img src="img/chair.png" style="width: 25%;float:left;margin-left: 40px;margin-top: -220px">
+    <img src="img/gif.gif" style="width:55%;float:right;margin-right: -240px;margin-top: -240px">
+    
+</body>
 </html>

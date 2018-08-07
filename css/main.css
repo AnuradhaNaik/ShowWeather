@@ -1,0 +1,41 @@
+*{
+			padding: 6px;
+			color:cornflowerblue;
+font-family: 'Gloria Hallelujah', cursive;
+
+
+		}
+		#fivecities {
+    font-size: larger;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    background: url('../img/win.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-width: 400px;
+    min-height: 350px;padding: 60px;
+    padding-top: 60px;
+}
+		#fivecities li{
+			padding: 13px;
+			margin-bottom: 15px;
+		}
+		#fivecities li>a{
+			text-decoration: none;
+		}
+		#fc div{
+			padding:10px;padding-left: 15px;padding-right: 15px;
+			border:1px solid;
+			display: inline-block;cursor:pointer;
+			margin-left:-7px;
+		}
+#fc div.selected{
+	background: cornflowerblue;color: white;border-color: cornflowerblue;
+}
+.temp{
+	color:blue;
+}
+.temp:after{
+content: "°";
+}
