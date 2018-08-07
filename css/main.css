@@ -5,6 +5,9 @@ font-family: 'Gloria Hallelujah', cursive;
 
 
 		}
+		body.html{
+			overflow-x: hidden;height:100%;width: 100%;
+		}
 		#fivecities {
     font-size: larger;
     text-align: center;
@@ -16,6 +19,7 @@ font-family: 'Gloria Hallelujah', cursive;
     min-width: 400px;
     min-height: 350px;padding: 60px;
     padding-top: 60px;
+    width: 55%;
 }
 		#fivecities li{
 			padding: 10px;
