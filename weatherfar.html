@@ -19,7 +19,7 @@
        window.onload = function () {
              
 
-         getTemp("FAR","#t1"); getTempD("FAR","#d1");
+         getTemp("FAR","#t1"); getTempD("FAR");
 }
 
 </script>
@@ -31,20 +31,21 @@
    		        
     <div style="background-repeat: no-repeat;background-size: 60% 60%;max-width: 700px;min-height: 500px;">
 
-<div id="fc">
+
+    <ul id="fivecities" >
+      <li><a>FairFax,VA</a><span class="temp" id="t1"></span></li>
+          <li><span id="d1"></span></li><li><span id="h1"></span></li>
+<img src="img/fairfax.png" style="width: 45%;margin-top: 40px">
+    </ul>
+    <div id="fc">
   <div onclick="toTemp('F','FAR')">°F</div>
   <div onclick="toTemp('C','FAR')" class="selected">°C</div>
 </div>
-    <ul id="fivecities" >
-      <li><a>FairFax,VA</a><span class="temp" id="t1"></span></li>
-          <li><span id="d1"></span></li>
-<img src="img/fairfax.png" style="width: 45%;margin-top: 40px">
-    </ul>
 
 
     </div>
     <img  class="extras" src="img/chair.png" style="width: 25%;float:left;margin-left: 40px;margin-top: -220px">
     <img  class="extras" src="img/gif.gif" style="width:55%;float:right;margin-right: -240px;margin-top: -240px">
-    
+      <hr id="line" >
 </body>
 </html>

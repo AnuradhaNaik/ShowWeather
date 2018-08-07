@@ -97,7 +97,8 @@ function getTempD(argument,id) {
        
           
         
-          $(id).html(response.weather[0].description);
+          $("#d1").html(response.weather[0].description);
+          $("#h1").html("Humidity : "+response.main.humidity+"%");
          
         });
 

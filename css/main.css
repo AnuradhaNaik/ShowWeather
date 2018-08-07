@@ -18,8 +18,8 @@ font-family: 'Gloria Hallelujah', cursive;
     padding-top: 60px;
 }
 		#fivecities li{
-			padding: 13px;
-			margin-bottom: 15px;
+			padding: 10px;
+			margin-bottom: 12px;
 		}
 		#fivecities li>a{
 			text-decoration: none;
@@ -39,7 +39,17 @@ font-family: 'Gloria Hallelujah', cursive;
 .temp:after{
 content: "°";
 }
-
+#line{
+	background: cornflowerblue;
+    border-width: 0px;
+    height: px;
+    padding: 1px;
+    margin-top: 53px;
+    width: 100%;
+    position: absolute;
+    margin-left: -20px;
+    z-index: -9px;
+}
 @media (min-width: 320px) and (max-width: 1100px) {
   
 .extras{

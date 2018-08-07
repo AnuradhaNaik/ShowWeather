@@ -18,7 +18,7 @@
        window.onload = function () {
              
 
-         getTemp("PHI","#t1"); getTempD("PHI","#d1");
+         getTemp("PHI","#t1"); getTempD("PHI");
 }
 
 </script>
@@ -30,20 +30,20 @@
    		    		 
     <div style="background-repeat: no-repeat;background-size: 60% 60%;max-width: 700px;min-height: 500px;">
 
-<div id="fc">
-	<div onclick="toTemp('F','PHI')">°F</div>
-  <div onclick="toTemp('C','PHI')" class="selected">°C</div>
-</div>
+
 		<ul id="fivecities" >
 			<li><a>Philadelphia,PA</a><span class="temp" id="t1"></span></li>
-          <li><span id="d1"></span></li>
+          <li><span id="d1"></span></li><li><span id="h1"></span></li>
 <img src="img/bell.png" style="width: 35%;margin-top: 40px">
 		</ul>
-
+<div id="fc">
+  <div onclick="toTemp('F','FAR')">°F</div>
+  <div onclick="toTemp('C','FAR')" class="selected">°C</div>
+</div>
 
 		</div>
 		<img  class="extras"  src="img/chair.png" style="width: 25%;float:left;margin-left: 40px;margin-top: -220px">
 		<img  class="extras"  src="img/gif.gif" style="width:55%;float:right;margin-right: -240px;margin-top: -240px">
-    
+      <hr id="line" >
 </body>
 </html>

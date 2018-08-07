@@ -40,10 +40,7 @@ function toTemp(argument) {
    		 
     <div style="background-repeat: no-repeat;background-size: 60% 60%;max-width: 700px;min-height: 500px;">
 
-<div id="fc">
-	<div onclick="toTemp('F')">°F</div>
-	<div onclick="toTemp('C')" class="selected">°C</div>
-</div>
+
 		<ul id="fivecities" >
 			<li><a href="weathernyc.html">New York,NY</a><span class="temp" id="t1"></span></li>
 <li><a href="weatherchi.html" >Chicago,IL</a><span class="temp" id="t2"></span> </li>
@@ -51,11 +48,14 @@ function toTemp(argument) {
 <li><a href="weatherphi.html">Philadelphia,PA</a> <span class="temp" id="t4"></span></li>
 <li><a href="weatherfar.html">FairFax,VA </a><span class="temp" id="t5"></span></li>
 		</ul>
-
+<div id="fc">
+  <div onclick="toTemp('F','FAR')">°F</div>
+  <div onclick="toTemp('C','FAR')" class="selected">°C</div>
+</div>
 
 		</div>
 		<img class="extras" src="img/chair.png" style="width: 25%;float:left;margin-left: 40px;margin-top: -220px">
 		<img class="extras" src="img/gif.gif" style="width:55%;float:right;margin-right: -240px;margin-top: -240px">
-    
+    <hr id="line" >
 </body>
 </html>
