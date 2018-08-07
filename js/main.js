@@ -43,7 +43,7 @@ function getTemp(argument,id) {
         
         },
         function(response){  //'response' is actually a variable, we could name it what ever we want. It just stores what the api sends
-        //  console.log(response);
+         console.log(response);
 
       temp=Math.round((response.main.temp) * 100) / 100
 
