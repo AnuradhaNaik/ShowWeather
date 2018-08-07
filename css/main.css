@@ -28,6 +28,9 @@ font-family: 'Gloria Hallelujah', cursive;
 		#fivecities li>a{
 			text-decoration: none;
 		}
+		#fc{
+			    text-align: -webkit-center;
+		}
 		#fc div{
 			padding:10px;padding-left: 15px;padding-right: 15px;
 			border:1px solid;
